@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawat</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        header{
+                background-color: rgb(51, 51, 238);
+                position: fixed;
+                top: 0;
+        }
+        #header{
+            display: flex;
+            height: 25vh;
+            width: 100vw;
+            
+        }
+        #logo{
+            height: 25vh;
+            width: 20vw;
+
+        }
+        #logo img{
+            height: 25vh;
+            width: 20vw;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            
+            height: 25vh;
+            width: 45vw;
+            background-image: url(background1.avif);
+            background-repeat: repeat;
+            
+            
+        }
+        #navbar a{
+            margin-top: 20vh;
+            margin-bottom: 4vh;
+            text-decoration: none;
+            color: beige;
+            
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #navbar a:hover{
+            color: green;
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: underline 3px rgb(235, 32, 6);
+        }
+        #extra{
+            display: flex;
+            justify-content: space-around;
+            height: 25vh;
+            width: 35vw;
+            background-image: url(mainbackground.jpg);
+            background-size: contain;
+            background-color: rgb(32, 32, 32);
+        }
+        #extra a{
+            margin-top:3vh ;
+            margin-bottom: 20vh;
+            }
+        main{
+            display: flex;
+            justify-content: space-around;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(mainbackground.jpg);
+            background-size: contain;
+            margin-top: 25vh;
+            
+            
+        }
+        .tagline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            width: 100vw;
+            color: beige;
+            font-size: 50px;
+            margin-top: 2vh;
+            margin-bottom: 3vh;
+        }
+        #code{
+            display: flex;
+            justify-content: space-between;
+            height: 4vh;
+            width: 100vw;
+            margin-top: 5vh;
+            margin-bottom: 7vh;
+            color: rgb(109, 212, 109);
+            
+           
+
+        }
+        #menu{
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            height: 55vh;
+        }
+        .menu {
+            height: 55vh;
+            width: 25vw;
+
+            
+        }
+        .menu img{
+            height: 30vh;
+            width: 20vw;
+            
+        }
+        #menu button{
+            height: 4vh;
+            width: 10vw;
+            border-radius: 10px;
+            margin-left: 10vh;
+            font-size: 2.5vh;
+        }
+        #menu button:hover{
+            background-color: rgb(98, 226, 98);
+        }
+        .view{
+            height: 30vh;
+            width: 30vw;
+
+        }
+        .footer{
+            display: flex;
+            height: 8vh;
+            
+        }
+        
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo" >
+                <img src="dawat.png" alt="">
+            </div>
+            <nav id="navbar">
+                <a style="margin-right: 5vw;" href="#">HOME</a>
+                <a href="starter.html">STARTER</a>
+                <a href="main.html">MAIN COURSE</a>
+                <a href="dessert.html">DESSERT</a>
+            </nav>
+            <div id="extra">
+                <a ><svg xmlns="http://www.w3.org/2000/svg" height="5vh" viewBox="0 -960 960 960" width="3vw" fill="#e3e3e3"><path d="M796-121 533-384q-30 26-69.96 40.5Q423.08-329 378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="5vh" viewBox="0 -960 960 960" width="4vw" fill="#e3e3e3"><path d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.81-195q-57.81 0-97.31-39.69-39.5-39.68-39.5-97.5 0-57.81 39.69-97.31 39.68-39.5 97.5-39.5 57.81 0 97.31 39.69 39.5 39.68 39.5 97.5 0 57.81-39.69 97.31-39.68 39.5-97.5 39.5Zm.66 370Q398-80 325-111.5t-127.5-86q-54.5-54.5-86-127.27Q80-397.53 80-480.27 80-563 111.5-635.5q31.5-72.5 86-127t127.27-86q72.76-31.5 155.5-31.5 82.73 0 155.23 31.5 72.5 31.5 127 86t86 127.03q31.5 72.53 31.5 155T848.5-325q-31.5 73-86 127.5t-127.03 86Q562.94-80 480.47-80Zm-.47-60q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="5vh" viewBox="0 -960 960 960" width="4vw" fill="#e3e3e3"><path d="M465-613v-123H341v-60h124v-123h60v123h123v60H525v123h-60ZM289.79-80Q260-80 239-101.21t-21-51Q218-182 239.21-203t51-21Q320-224 341-202.79t21 51Q362-122 340.79-101t-51 21Zm404 0Q664-80 643-101.21t-21-51Q622-182 643.21-203t51-21Q724-224 745-202.79t21 51Q766-122 744.79-101t-51 21ZM62-820v-60h116l170 364h287.71L796-796h67L701-493q-11 19-28.56 30.5T634-451H331l-56 104h491v60H284q-37.66 0-57.33-30T224-378l64-118-148-324H62Z"/></svg></a>
+            </div>
+        </div>
+        
+
+
+    </header>
+    <main>
+        <section>
+            <div class="tagline">
+                    
+                        <I> 🍽️ Bring the best to your plate 🍽️</I>
+                    
+
+            </div>
+            <div id="code">
+                    
+                        <h1>USE CODE ZABA10 FOR 10% DISCOUNT</h1>
+                        <h1>Free Delivery on Order above ₹500 ()</h1>
+                    
+                    
+            </div>
+
+            
+            <div id="menu">
+                <div class="menu">
+                    <div><img src="ChickenStarter.webp" alt=""></div>
+                    <div style="margin-left: 6vw;"><h1>STARTERS</h1></div><BR>
+                    <a href="starter.html"><BUTton>EXPLORE</BUTton></a>
+                    
+                </div>
+                <div class="menu">
+                    <div><img src="biryani.webp" alt=""></div>
+                    <div style="margin-left: 5vw;"><h1>MAIN COURSE</h1></div><BR>
+                    <a href="main.html"><BUTton>EXPLORE</BUTton></a>
+                </div>
+                <div class="menu">
+                    <div><img src="dessert.webp" alt=""></div>
+                    <div style="margin-left: 6vw;"><h1>DESSERTS</h1></div><BR>
+                    <a href="dessert.html"><BUTton>EXPLORE</BUTton></a>
+                </div>
+
+
+            </div>
+            <DIV class="footer">
+                <div style="margin-left: 5vw;color: blanchedalmond;font-size: medium;">Phone no. 9514567654<br>E-mail:Zaba's@gmail.com</div>
+                <div class="view">
+                    
+                    <a href="menu.html"><button class="button" style="margin-left: 60VW;width: 10VW;height: 4vh;;background-color: rgb(106, 230, 106);">VIEW MENU </button> </a>
+                </div>
+
+            </DIV>
+           
+        </section>
+
+    </main>
+    
+</body>
+</html>
